@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        bind:
+            Productsup\CDE\ContainerApi\ContainerApiInterface $containerApi: '@container.api'
+
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/Kernel.php'
