@@ -1,0 +1,14 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    container.api.client:
+        class: Productsup\CDE\ContainerApi\BaseClient\Client
+        factory: '@App\Shared\Infrastructure\ContainerApi\ContainerApiClientFactory'
+
+    container.api:
+        class: Productsup\CDE\ContainerApi\ContainerApi
+        factory: '@App\Shared\Infrastructure\ContainerApi\ContainerApiFactory'
+        arguments:
+            $containerApiClient: '@container.api.client'
