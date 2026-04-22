@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Shared\Infrastructure\ContainerApi;
+namespace App\ContainerApi;
 
 use GuzzleHttp\Client as HttpClient;
 use Productsup\CDE\ContainerApi\BaseClient\Client;

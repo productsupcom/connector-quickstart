@@ -5,10 +5,10 @@ services:
 
     container.api.client:
         class: Productsup\CDE\ContainerApi\BaseClient\Client
-        factory: '@App\Shared\Infrastructure\ContainerApi\ContainerApiClientFactory'
+        factory: '@App\ContainerApi\ContainerApiClientFactory'
 
     container.api:
         class: Productsup\CDE\ContainerApi\ContainerApi
-        factory: '@App\Shared\Infrastructure\ContainerApi\ContainerApiFactory'
+        factory: '@App\ContainerApi\ContainerApiFactory'
         arguments:
             $containerApiClient: '@container.api.client'
