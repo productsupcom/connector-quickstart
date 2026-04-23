@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\DataSource\Infrastructure\Cli;
+namespace App\Command;
 
-use App\DataSource\Application\Service\ImportService;
+use App\Service\ImportService;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

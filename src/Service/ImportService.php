@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\DataSource\Application\Service;
+namespace App\Service;
 
 use Productsup\CDE\ContainerApi\ContainerApiInterface;
 
