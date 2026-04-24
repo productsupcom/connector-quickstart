@@ -7,7 +7,7 @@
         "php": ">=8.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "productsupcom/cde-client-container-api": "^1",
+        "productsupcom/container-api-client": "^1",
         "symfony/console": "^7.1",
         "symfony/dotenv": "^7.1",
         "symfony/flex": "^2",
@@ -26,8 +26,7 @@
         }
     },
     "repositories": [
-        {"type": "composer", "url": "https://repo.packagist.com/productsupcom/"},
-        {"packagist.org": false}
+        {"type": "vcs", "url": "https://github.com/productsupcom/container-api-client"}
     ],
     "config": {
         "allow-plugins": {
