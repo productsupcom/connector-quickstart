@@ -1,6 +1,6 @@
 {
     "name": "productsupcom/connector-quickstart",
-    "description": "Minimal datasource connector quickstart for the Productsup CDE.",
+    "description": "Quickstart connectors for the Productsup CDE — datasource and export examples.",
     "type": "project",
     "license": "MIT",
     "require": {
