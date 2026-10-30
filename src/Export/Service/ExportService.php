@@ -27,11 +27,6 @@ readonly class ExportService
             try {
                 $this->sendToChannel($product);
                 $successCount++;
-
-                $this->containerApi->appendToFeedbackFile([
-                    'id' => $product['id'],
-                    'status' => 'success',
-                ]);
             } catch (\Throwable $e) {
                 $errorCount++;
 
